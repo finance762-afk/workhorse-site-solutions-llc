@@ -15,12 +15,8 @@ $currentPage = $currentPage ?? 'home';
     <div class="header-inner container">
 
       <!-- Logo -->
-      <a href="/" class="navbar-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> — Home">
-        <span class="logo-mark">W</span>
-        <span class="logo-text">
-          <span class="logo-name">Workhorse Site Solutions</span>
-          <span class="logo-tagline">Groundwork &amp; Property Solutions</span>
-        </span>
+      <a href="/" class="navbar-logo site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> — Home">
+        <img src="<?php echo htmlspecialchars($logoUrl); ?>" alt="<?php echo htmlspecialchars($siteName); ?>" width="200" height="50">
       </a>
 
       <!-- Desktop Nav Links -->
@@ -52,12 +48,12 @@ $currentPage = $currentPage ?? 'home';
       <!-- Desktop CTA -->
       <div class="header-cta">
         <?php if (!empty($phone)): ?>
-        <a href="tel:<?php echo htmlspecialchars($phone); ?>" class="btn btn-outline-white btn-sm">
+        <a href="tel:<?php echo htmlspecialchars($phone); ?>" class="btn btn-accent btn-sm click-to-call">
           <i data-lucide="phone" style="width:16px;height:16px"></i>
-          <?php echo htmlspecialchars($phone); ?>
+          Call <?php echo htmlspecialchars($phone); ?>
         </a>
         <?php endif; ?>
-        <a href="/contact/" class="btn btn-accent btn-sm">Free Estimate</a>
+        <a href="/contact/" class="btn btn-outline-white btn-sm">Free Estimate</a>
       </div>
 
       <!-- Hamburger Toggle -->

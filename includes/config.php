@@ -142,6 +142,9 @@ $socialLinks = [
 // ── Analytics ─────────────────────────────────────────────
 $googleAnalyticsId = 'G-XXXXXXXXXX';
 
+// ── Logo ─────────────────────────────────────────────────
+$logoUrl = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/logo/1779395834513-8d2g9i-IMG_7612.jpeg';
+
 // ── Design ────────────────────────────────────────────────
 $colors = [
     'primary'   => '#000000',

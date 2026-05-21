@@ -15,11 +15,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 
       <!-- Column 1: About / Trust -->
       <div class="footer-col">
-        <a href="/" class="navbar-logo" aria-label="<?php echo htmlspecialchars($siteName); ?>">
-          <span class="logo-mark">W</span>
-          <span class="logo-text">
-            <span class="logo-name">Workhorse Site Solutions</span>
-          </span>
+        <a href="/" class="navbar-logo site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?>">
+          <img src="<?php echo htmlspecialchars($logoUrl); ?>" alt="<?php echo htmlspecialchars($siteName); ?>" width="200" height="50">
         </a>
         <p style="margin-top:var(--space-4)"><?php echo htmlspecialchars($tagline); ?></p>
         <p>Family-owned and locally-operated, serving the Portland Metro Area with junk removal, excavation, demolition, and site preparation services.</p>

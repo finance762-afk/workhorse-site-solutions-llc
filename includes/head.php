@@ -46,6 +46,7 @@ $ogImage         = $ogImage         ?? 'https://db.pageone.cloud/storage/v1/obje
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//i.imgur.com">
   <link rel="dns-prefetch" href="//db.pageone.cloud">
+  <link rel="dns-prefetch" href="//elfsightcdn.com">
 
   <?php if (!empty($heroImagePreload)): ?>
   <!-- Hero Image Preload -->

@@ -326,6 +326,28 @@ section.hero {
   border-color: var(--color-primary);
   color: var(--color-white);
 }
+
+/* Click-to-Call Button */
+.click-to-call {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.click-to-call i,
+.click-to-call svg {
+  animation: phone-ring 2s ease-in-out infinite;
+}
+@keyframes phone-ring {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-15deg); }
+  20% { transform: rotate(15deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+}
+
 .btn-outline-white {
   background: transparent;
   color: var(--color-white);

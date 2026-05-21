@@ -375,41 +375,10 @@ $schemaMarkup = generateFAQSchema($faqs);
   margin-top: var(--space-1);
 }
 
-/* ── Reviews Grid (no Swiper — CSS grid) ─────────────── */
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
-}
-.review-service {
-  font-size: var(--font-size-xs);
-  color: var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: var(--space-2);
-}
-
-/* ── Badge Strip (Reviews) ───────────────────────────── */
-.badge-strip {
-  display: flex;
-  gap: var(--space-8);
-  justify-content: center;
-  margin-top: var(--space-10);
-  flex-wrap: wrap;
-}
-.badge-strip-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  color: rgba(255,255,255,0.7);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-}
-.badge-strip-item i,
-.badge-strip-item svg {
-  width: 22px;
-  height: 22px;
-  color: var(--color-star);
+/* ── Elfsight Reviews Widget ─────────────────────────── */
+.elfsight-reviews-wrap {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
 }
 
 /* ── CTA Banner Enhancement ──────────────────────────── */
@@ -792,132 +761,10 @@ $schemaMarkup = generateFAQSchema($faqs);
       <p>Real feedback from homeowners, contractors, and property managers in Damascus, Gresham, Happy Valley, and the Portland Metro Area.</p>
     </div>
 
-    <div class="reviews-grid">
-      <!-- Review 1 -->
-      <div class="review-card reveal-up reveal-delay-1">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"Called Workhorse to clear a half-acre lot near Boring for a new build. They brought in the excavator, removed all the brush and stumps, and had the lot graded in three days. Exactly what we needed to stay on schedule."</p>
-        <div class="review-author">
-          <div class="review-avatar">M</div>
-          <div>
-            <div class="review-name">Mike R.</div>
-            <div class="review-date">Damascus, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Land Clearing &amp; Grading</div>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="review-card reveal-up reveal-delay-2">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"We had an entire garage full of junk, old furniture, and appliances that needed to go. Workhorse showed up on time, loaded everything in about two hours, and swept the garage floor before they left. Fair price, great crew."</p>
-        <div class="review-author">
-          <div class="review-avatar">S</div>
-          <div>
-            <div class="review-name">Sarah T.</div>
-            <div class="review-date">Gresham, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Junk Removal &amp; Cleanout</div>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="review-card reveal-up reveal-delay-3">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"Hired them to demo an old shed and haul everything away. The crew was professional, careful around our fence line, and finished same-day. We've already booked them for trenching work on our drainage project next month."</p>
-        <div class="review-author">
-          <div class="review-avatar">J</div>
-          <div>
-            <div class="review-name">Jason K.</div>
-            <div class="review-date">Happy Valley, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Demolition</div>
-      </div>
-
-      <!-- Review 4 -->
-      <div class="review-card reveal-up reveal-delay-1">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"We needed our driveway regraded after years of erosion. Workhorse brought the right equipment, fixed the grade, added new gravel, and compacted everything perfectly. Our driveway drains correctly for the first time in years."</p>
-        <div class="review-author">
-          <div class="review-avatar">D</div>
-          <div>
-            <div class="review-name">David L.</div>
-            <div class="review-date">Sandy, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Driveway Services</div>
-      </div>
-
-      <!-- Review 5 -->
-      <div class="review-card reveal-up reveal-delay-2">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"Workhorse handled our entire site prep — cleared the lot, dug the foundation, ran trenches for utilities, and graded for drainage. One contractor for all of it saved us weeks of coordinating different companies."</p>
-        <div class="review-author">
-          <div class="review-avatar">A</div>
-          <div>
-            <div class="review-name">Angela P.</div>
-            <div class="review-date">Clackamas, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Excavation &amp; Site Prep</div>
-      </div>
-
-      <!-- Review 6 -->
-      <div class="review-card reveal-up reveal-delay-3">
-        <div class="review-stars">
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-          <span class="star"><i data-lucide="star" style="width:18px;height:18px;fill:var(--color-star);color:var(--color-star)"></i></span>
-        </div>
-        <p class="review-text">"Had three large fir trees removed that were too close to the house. The Workhorse team took them down safely, ground the stumps, and hauled every bit of debris. Our yard looks incredible now. Highly recommend."</p>
-        <div class="review-author">
-          <div class="review-avatar">R</div>
-          <div>
-            <div class="review-name">Rachel M.</div>
-            <div class="review-date">Boring, OR</div>
-          </div>
-        </div>
-        <div class="review-service">Tree Services</div>
-      </div>
-    </div>
-
-    <div class="badge-strip reveal-up">
-      <div class="badge-strip-item"><i data-lucide="star"></i> Google Reviews — 5.0</div>
-      <div class="badge-strip-item"><i data-lucide="award"></i> 47+ Verified Reviews</div>
-      <div class="badge-strip-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</div>
+    <!-- Elfsight All-in-One Reviews | Workhorse Reviews -->
+    <div class="elfsight-reviews-wrap">
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-e80a217d-e526-4dcf-b987-0e6f24b6cf1b" data-elfsight-app-lazy></div>
     </div>
   </div>
 </section>
