@@ -16,7 +16,7 @@ $currentPage = $currentPage ?? 'home';
 
       <!-- Logo -->
       <a href="/" class="navbar-logo site-logo" aria-label="<?php echo htmlspecialchars($siteName); ?> — Home">
-        <img src="<?php echo htmlspecialchars($logoUrl); ?>" alt="<?php echo htmlspecialchars($siteName); ?>" width="200" height="50">
+        <img src="<?php echo htmlspecialchars($logoUrl); ?>" alt="<?php echo htmlspecialchars($siteName); ?>" width="280" height="70">
       </a>
 
       <!-- Desktop Nav Links -->

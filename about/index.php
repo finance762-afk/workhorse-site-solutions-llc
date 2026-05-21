@@ -455,7 +455,7 @@ $schemaMarkup = generateBreadcrumbSchema([
       <div class="value-card card-tint-3 reveal-up reveal-delay-3">
         <div class="value-icon"><i data-lucide="handshake"></i></div>
         <h3>Straight Talk, Fair Price</h3>
-        <p>No bait-and-switch, no surprise charges. We walk the site, give you an honest number, and stick to it. That's how we've kept a 5.0 rating across 47 reviews.</p>
+        <p>No bait-and-switch, no surprise charges. We walk the site, give you an honest number, and stick to it. That's how we've kept a 5.0 rating across 100+ reviews.</p>
       </div>
       <div class="value-card card-tint-1 reveal-up reveal-delay-1">
         <div class="value-icon"><i data-lucide="recycle"></i></div>

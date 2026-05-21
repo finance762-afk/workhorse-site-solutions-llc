@@ -757,7 +757,7 @@ $schemaMarkup = generateFAQSchema($faqs);
   <div class="container">
     <div class="section-header reveal-up">
       <span class="eyebrow" style="color:var(--color-accent);">What Clients Say</span>
-      <h2>Rated <span class="text-accent">5.0 Stars</span> Across 47 Google Reviews</h2>
+      <h2>Rated <span class="text-accent">5.0 Stars</span> Across 100+ Google Reviews</h2>
       <p>Real feedback from homeowners, contractors, and property managers in Damascus, Gresham, Happy Valley, and the Portland Metro Area.</p>
     </div>
 

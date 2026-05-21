@@ -156,7 +156,7 @@ $ogImage         = $ogImage         ?? 'https://db.pageone.cloud/storage/v1/obje
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "47",
+      "reviewCount": "100",
       "bestRating": "5",
       "worstRating": "1"
     }

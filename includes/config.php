@@ -12,7 +12,7 @@ $tagline       = 'Groundwork, Grading & Property Solutions for Residential and C
 $industry      = 'junk_removal';
 
 // ── Contact ───────────────────────────────────────────────
-$phone          = '';
+$phone          = '(503) 839-7151';
 $phoneSecondary = '';
 $email          = '';
 $contactEmail   = '';
