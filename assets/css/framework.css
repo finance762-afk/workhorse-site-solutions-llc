@@ -85,7 +85,7 @@
   --space-16: 4rem;
 
   /* Layout */
-  --nav-height: 80px;
+  --nav-height: 180px;
   --max-width: 1200px;
   --max-width-wide: 1400px;
   --content-width: 65ch;
@@ -112,7 +112,7 @@
 
 /* === Reset & Base === */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 body {
   font-family: var(--font-body);
   font-size: var(--fs-body);
@@ -433,12 +433,12 @@ section.hero {
 
 /* Image Logo */
 .site-logo {
-  height: 80px;
+  height: 160px;
   width: auto;
   transition: height var(--transition-base);
 }
 .site-header.scrolled .site-logo {
-  height: 60px;
+  height: 120px;
 }
 .site-logo img { height: 100%; width: auto; }
 
@@ -1146,7 +1146,7 @@ section.hero {
 .ticker-track {
   display: flex;
   gap: var(--space-8);
-  animation: ticker-scroll 30s linear infinite;
+  animation: ticker-scroll 300s linear infinite;
   white-space: nowrap;
 }
 .ticker-track span {
@@ -1162,7 +1162,7 @@ section.hero {
   100% { transform: translateX(-50%); }
 }
 @media (max-width: 768px) {
-  .ticker-track { animation-duration: 60s; }
+  .ticker-track { animation-duration: 600s; }
 }
 
 /* === Back to Top === */
@@ -1386,12 +1386,13 @@ section.hero {
 
 /* === Responsive: Tablet (768px) === */
 @media (max-width: 768px) {
+  :root { --nav-height: 130px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .header-cta { display: none; }
 
-  .site-logo { height: 56px; }
-  .site-header.scrolled .site-logo { height: 48px; }
+  .site-logo { height: 112px; }
+  .site-header.scrolled .site-logo { height: 96px; }
 
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
@@ -1432,8 +1433,9 @@ section.hero {
 
 /* === Responsive: Mobile (480px) === */
 @media (max-width: 480px) {
-  .site-logo { height: 48px; }
-  .site-header.scrolled .site-logo { height: 40px; }
+  :root { --nav-height: 110px; }
+  .site-logo { height: 96px; }
+  .site-header.scrolled .site-logo { height: 80px; }
 
   .services-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: var(--space-4); }

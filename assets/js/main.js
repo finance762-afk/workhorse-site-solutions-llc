@@ -55,13 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (entry.isIntersecting) {
           var el = entry.target;
           var rawTarget = el.getAttribute('data-target');
-          var target = Number(rawTarget);
           var suffix = el.getAttribute('data-suffix') || '';
           var prefix = el.getAttribute('data-prefix') || '';
+          var originalText = el.textContent;
 
-          // Guard against NaN — display the raw value as fallback
-          if (isNaN(target) || rawTarget === null) {
-            el.textContent = prefix + (rawTarget || '0') + suffix;
+          // Parse target — try float first for decimals like "5.0"
+          var target = parseFloat(rawTarget);
+          var isDecimal = rawTarget && rawTarget.indexOf('.') !== -1;
+
+          // Guard against NaN — fall back to original static text
+          if (rawTarget === null || rawTarget === '' || isNaN(target)) {
+            el.textContent = originalText;
             counterObserver.unobserve(el);
             return;
           }
@@ -73,11 +77,16 @@ document.addEventListener('DOMContentLoaded', function() {
           function animate(timestamp) {
             if (!startTime) startTime = timestamp;
             var progress = Math.min((timestamp - startTime) / duration, 1);
-            var eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-            var current = Math.floor(eased * target);
-            el.textContent = prefix + current.toLocaleString() + suffix;
-            if (progress < 1) requestAnimationFrame(animate);
-            else el.textContent = prefix + target.toLocaleString() + suffix;
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = isDecimal
+              ? (eased * target).toFixed(1)
+              : Math.floor(eased * target).toLocaleString();
+            el.textContent = prefix + current + suffix;
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              el.textContent = prefix + (isDecimal ? target.toFixed(1) : target.toLocaleString()) + suffix;
+            }
           }
           requestAnimationFrame(animate);
           counterObserver.unobserve(el);

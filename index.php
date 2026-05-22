@@ -11,7 +11,7 @@ $currentPage     = 'home';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
 $heroPreloadImage = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
 $heroImagePreload = $heroPreloadImage;
-$cssVersion      = '4';
+$cssVersion      = '5';
 
 /* ── Photo Library (curated from client assets) ──────────── */
 $photoLibrary = [
@@ -686,8 +686,8 @@ $schemaMarkup = generateFAQSchema($faqs);
         <div class="stat-number stat-accent">5.0</div>
         <div class="stat-label">Google Rating</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number" data-counter data-target="100" data-suffix="%">100%</div>
+      <div class="stat-item stat-item--badge">
+        <div class="stat-number"><i data-lucide="shield-check" style="width:48px;height:48px;display:inline-block;vertical-align:middle;color:var(--color-accent)"></i></div>
         <div class="stat-label">Licensed, Bonded &amp; Insured</div>
       </div>
     </div>
