@@ -10,7 +10,7 @@ $canonicalUrl    = $siteUrl . '/about/';
 $currentPage     = 'about';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396305026-gall8t-481679864_606598672364120_4541778524350946207_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ──────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

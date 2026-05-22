@@ -8,7 +8,7 @@ $pageTitle       = 'Land Clearing, Excavation & Junk Removal in Sandy, OR | Work
 $pageDescription = 'Workhorse Site Solutions provides land clearing, excavation, demolition, and junk removal in Sandy, OR. Heavy equipment for large rural lots near Mt. Hood. Licensed, bonded, insured.';
 $canonicalUrl    = $siteUrl . '/areas/sandy/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

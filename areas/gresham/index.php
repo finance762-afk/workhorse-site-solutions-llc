@@ -8,7 +8,7 @@ $pageTitle       = 'Junk Removal & Excavation Services in Gresham, OR | Workhors
 $pageDescription = 'Workhorse Site Solutions provides junk removal, excavation, demolition, and land clearing in Gresham, OR. Licensed Oregon contractor based in Damascus serving Multnomah County.';
 $canonicalUrl    = $siteUrl . '/areas/gresham/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 $heroImagePreload = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396278387-cuojt2-481225095_604441245913196_3812417594365928414_n.jpg';
 
 /* ── Photos ─────────────────────────────────────────────────── */

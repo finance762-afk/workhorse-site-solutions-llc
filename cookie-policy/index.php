@@ -15,7 +15,7 @@ $pageTitle       = 'Cookie Policy | ' . $siteName;
 $pageDescription = 'Cookie Policy for ' . $siteName . ' — what cookies we use and how to control them.';
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $currentPage     = 'legal';
-$cssVersion      = '2';
+$cssVersion      = '6';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 

@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/land-clearing/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396313562-xq2js1-481701393_605954449095209_2349548257896328613_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '3';
+$cssVersion      = '6';
 
 /* ── Page Photos ────────────────────────────────────────────── */
 $photos = [

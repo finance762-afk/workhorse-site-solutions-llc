@@ -8,7 +8,7 @@ $pageTitle       = 'Junk Removal, Excavation & Site Work in Damascus, OR | Workh
 $pageDescription = 'Workhorse Site Solutions is a licensed Oregon contractor based in Damascus, OR. Junk removal, excavation, demolition, land clearing, grading, and site prep for Clackamas County properties.';
 $canonicalUrl    = $siteUrl . '/areas/damascus/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

@@ -8,7 +8,7 @@ $pageTitle       = 'Excavation, Demolition & Site Work in Happy Valley, OR | Wor
 $pageDescription = 'Workhorse Site Solutions provides excavation, demolition, land clearing, grading, and junk removal in Happy Valley, OR. Hillside lot experts serving Clackamas County since 2022.';
 $canonicalUrl    = $siteUrl . '/areas/happy-valley/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

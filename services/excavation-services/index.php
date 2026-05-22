@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/' . $service['slug'] . '/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396273035-84csrf-481103535_608058122218175_6060079720789259957_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

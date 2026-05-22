@@ -10,7 +10,7 @@ $canonicalUrl    = $siteUrl . '/services/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Service Card Image Map ──────────────────────────────── */
 $serviceImages = [

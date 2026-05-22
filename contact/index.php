@@ -8,7 +8,7 @@ $pageTitle       = 'Contact Workhorse Site Solutions | Free Estimates in Damascu
 $pageDescription = 'Request a free estimate from Workhorse Site Solutions in Damascus, OR. Call or fill out our form for junk removal, excavation, demolition, land clearing, and site work across the Portland Metro Area.';
 $canonicalUrl    = $siteUrl . '/contact/';
 $currentPage     = 'contact';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Schema ──────────────────────────────────────────────── */
 $schemaMarkup = generateBreadcrumbSchema([

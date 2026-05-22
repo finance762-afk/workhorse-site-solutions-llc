@@ -6,7 +6,7 @@ $currentPage  = 'services';
 $pageTitle    = 'Fence Installation in Damascus, OR | ' . $siteName;
 $pageDescription = 'Professional fence installation for residential and commercial properties in Damascus, OR. Wood, vinyl, chain-link, and custom fencing. Post-hole drilling, grading, and permit coordination included. Free estimates.';
 $canonicalUrl = $siteUrl . '/services/fence-installation/';
-$cssVersion   = '2';
+$cssVersion      = '6';
 
 $heroImage    = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396339937-xc7wc2-481770700_605954432428544_6388616634957804134_n.jpg';
 $bodyImage1   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396563082-lgsepy-482134089_605970275760293_8409989844546383936_n.jpg';

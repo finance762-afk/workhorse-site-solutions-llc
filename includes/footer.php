@@ -163,10 +163,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 
 <!-- Scripts -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
-<script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/animations.js" defer></script>
-<script src="/assets/js/effects.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded',function(){if(window.lucide){lucide.createIcons();}});</script>
+<script src="/assets/js/main.js?v=<?php echo $cssVersion ?? '6'; ?>" defer></script>
+<script src="/assets/js/animations.js?v=<?php echo $cssVersion ?? '6'; ?>" defer></script>
+<script src="/assets/js/effects.js?v=<?php echo $cssVersion ?? '6'; ?>" defer></script>
 
 <!-- Cookie Banner Dismissal + Back to Top -->
 <script>

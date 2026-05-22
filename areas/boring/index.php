@@ -8,7 +8,7 @@ $pageTitle       = 'Junk Removal, Demolition & Land Clearing in Boring, OR | Wor
 $pageDescription = 'Workhorse Site Solutions provides junk removal, demolition, excavation, and land clearing in Boring, OR. Licensed Oregon contractor based 5 minutes away in Damascus. Free estimates.';
 $canonicalUrl    = $siteUrl . '/areas/boring/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

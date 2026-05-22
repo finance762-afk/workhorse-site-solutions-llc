@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/site-preparation-grading/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396323298-kfnmea-481764174_605959765761344_5422074130262060362_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '3';
+$cssVersion      = '6';
 
 /* ── Page Photos ────────────────────────────────────────────── */
 $photos = [

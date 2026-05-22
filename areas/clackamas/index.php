@@ -8,7 +8,7 @@ $pageTitle       = 'Site Preparation, Junk Removal & Excavation in Clackamas, OR
 $pageDescription = 'Workhorse Site Solutions provides junk removal, excavation, demolition, land clearing, and site preparation in Clackamas, OR. Licensed, bonded, insured contractor based in Damascus serving the I-205 corridor.';
 $canonicalUrl    = $siteUrl . '/areas/clackamas/';
 $currentPage     = 'service-area';
-$cssVersion      = '2';
+$cssVersion      = '6';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase  = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';
