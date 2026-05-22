@@ -11,7 +11,7 @@ $currentPage     = 'home';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
 $heroPreloadImage = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
 $heroImagePreload = $heroPreloadImage;
-$cssVersion      = '3';
+$cssVersion      = '4';
 
 /* ── Photo Library (curated from client assets) ──────────── */
 $photoLibrary = [
@@ -484,17 +484,40 @@ $schemaMarkup = generateFAQSchema($faqs);
     grid-template-columns: 1fr;
     min-height: auto;
     padding: calc(var(--nav-height) + var(--space-8)) var(--space-4) var(--space-8);
+    gap: var(--space-6);
   }
   .hero-form-card { max-width: 500px; margin: 0 auto; }
   .hero-text { max-width: 100%; }
 }
 @media (max-width: 768px) {
+  .hero--home {
+    padding: calc(var(--nav-height) + var(--space-6)) var(--space-4) var(--space-6);
+    gap: var(--space-5);
+  }
+  .hero-form-card { padding: var(--space-5); }
+  .hero-form-card h2 { font-size: var(--font-size-xl); }
+  .hero-title { font-size: clamp(1.5rem, 5vw, 2.5rem); }
+  .hero-subtitle { font-size: var(--font-size-base); margin-bottom: var(--space-4); }
+  .hero-actions { margin-bottom: var(--space-5); }
+  .hero-trust { gap: var(--space-3); }
+  .hero-trust-item { font-size: var(--font-size-xs); }
   .process-steps { grid-template-columns: 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
   .cta-banner .cta-inner { flex-direction: column; text-align: center; }
   .cta-banner .cta-text { text-align: center; }
   .about-stat-card { right: 0; bottom: -16px; }
   .numbered-section::before { display: none; }
+  .stats-section { padding: var(--space-8) 0; }
+}
+@media (max-width: 480px) {
+  .hero--home {
+    padding: calc(var(--nav-height) + var(--space-4)) var(--space-3) var(--space-5);
+  }
+  .hero-form-card { padding: var(--space-4); }
+  .hero-form input,
+  .hero-form select { padding: var(--space-3); font-size: var(--font-size-sm); }
+  .hero-trust { flex-direction: column; align-items: center; gap: var(--space-2); }
+  .about-image-wrap img { aspect-ratio: 3 / 4; }
 }
 </style>
 
@@ -651,19 +674,19 @@ $schemaMarkup = generateFAQSchema($faqs);
 <section class="stats-section">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-item reveal-up reveal-delay-1">
+      <div class="stat-item">
         <div class="stat-number" data-counter data-target="12" data-suffix="+">12+</div>
         <div class="stat-label">Services Offered</div>
       </div>
-      <div class="stat-item reveal-up reveal-delay-2">
+      <div class="stat-item">
         <div class="stat-number" data-counter data-target="<?php echo $yearsInBusiness; ?>" data-suffix="+"><?php echo $yearsInBusiness; ?>+</div>
         <div class="stat-label">Years Serving Damascus &amp; Portland Metro</div>
       </div>
-      <div class="stat-item reveal-up reveal-delay-3">
+      <div class="stat-item">
         <div class="stat-number stat-accent">5.0</div>
         <div class="stat-label">Google Rating</div>
       </div>
-      <div class="stat-item reveal-up reveal-delay-4">
+      <div class="stat-item">
         <div class="stat-number" data-counter data-target="100" data-suffix="%">100%</div>
         <div class="stat-label">Licensed, Bonded &amp; Insured</div>
       </div>

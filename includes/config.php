@@ -160,4 +160,4 @@ $yearsInBusiness = (int) date('Y') - $yearEstablished;
 $formAction = 'https://design.pageone.cloud/api/leads/workhorse-site-solutions-llc';
 
 // ── CSS Version (increment on every styles.css change) ────
-$cssVersion = '3';
+$cssVersion = '4';
