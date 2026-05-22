@@ -8,7 +8,7 @@ $pageTitle       = 'FAQ | Workhorse Site Solutions | Damascus, OR';
 $pageDescription = 'Frequently asked questions about junk removal, excavation, demolition, land clearing, and site work services from Workhorse Site Solutions in Damascus, OR.';
 $canonicalUrl    = $siteUrl . '/faq/';
 $currentPage     = 'faq';
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── FAQ Data ────────────────────────────────────────────── */
 $faqCategories = [

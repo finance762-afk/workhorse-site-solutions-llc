@@ -16,7 +16,7 @@ $pageTitle       = 'Terms of Service | ' . $siteName;
 $pageDescription = 'Terms of Service for ' . $siteName . ' — terms governing your use of our website and services.';
 $canonicalUrl    = $siteUrl . '/terms/';
 $currentPage     = 'legal';
-$cssVersion      = '6';
+$cssVersion      = '7';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 

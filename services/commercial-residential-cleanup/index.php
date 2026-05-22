@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/commercial-residential-cleanup/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396375954-kc1dx4-481899092_608065538884100_6123232012629192040_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Photo Map ──────────────────────────────────────────────── */
 $photoBase   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

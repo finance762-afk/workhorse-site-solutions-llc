@@ -6,7 +6,7 @@ $currentPage  = 'services';
 $pageTitle    = 'Trenching Services in Damascus, OR | ' . $siteName;
 $pageDescription = 'Professional trenching for utilities, drainage, irrigation, and foundations in Damascus, OR. Precision depth control with mini excavators and trenchers. Free estimates from Workhorse Site Solutions.';
 $canonicalUrl = $siteUrl . '/services/trenching/';
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 $heroImage    = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396334785-q74t8c-481770500_605969619093692_3211402394288864358_n.jpg';
 $bodyImage1   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396545443-ah4f2k-482072604_605969519093702_8544514331207501703_n.jpg';

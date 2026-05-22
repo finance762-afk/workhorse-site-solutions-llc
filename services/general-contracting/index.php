@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/general-contracting/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396363449-wyzf8f-481785958_604894925867828_2034594633166557511_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Photo Map ──────────────────────────────────────────────── */
 $photoBase   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

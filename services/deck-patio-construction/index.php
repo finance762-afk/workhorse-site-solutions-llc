@@ -6,7 +6,7 @@ $currentPage  = 'services';
 $pageTitle    = 'Deck & Patio Construction in Damascus, OR | ' . $siteName;
 $pageDescription = 'Custom deck and patio construction for Damascus, OR homes. Covered patios, composite decks, pergolas, and outdoor living spaces. Licensed, bonded, insured. Free estimates from Workhorse Site Solutions.';
 $canonicalUrl = $siteUrl . '/services/deck-patio-construction/';
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 $heroImage    = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396350225-vjqwww-481782847_604444459246208_4830443631052873384_n.jpg';
 $bodyImage1   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396586930-1poydj-482217249_604902059200448_385938872536582839_n.jpg';

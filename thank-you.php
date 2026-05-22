@@ -9,7 +9,7 @@ $pageDescription = 'Your message has been received. Workhorse Site Solutions wil
 $canonicalUrl    = $siteUrl . '/thank-you';
 $currentPage     = 'thank-you';
 $noindex         = true;
-$cssVersion      = '6';
+$cssVersion      = '7';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

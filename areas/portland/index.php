@@ -8,7 +8,7 @@ $pageTitle       = 'Junk Removal, Demolition & Site Work in Portland, OR | Workh
 $pageDescription = 'East Portland junk removal, demolition, excavation, and land clearing by Workhorse Site Solutions. Serving SE and NE Portland neighborhoods from our Damascus, OR base via I-205.';
 $canonicalUrl    = $siteUrl . '/areas/portland/';
 $currentPage     = 'service-area';
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

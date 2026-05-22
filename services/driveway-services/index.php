@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/driveway-services/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396355425-qis7fl-481783972_604904149200239_7919437156192045435_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Photo Map ──────────────────────────────────────────────── */
 $photoBase   = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

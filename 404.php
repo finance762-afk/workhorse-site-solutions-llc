@@ -9,7 +9,7 @@ $pageDescription = 'The page you were looking for could not be found. Browse our
 $canonicalUrl    = $siteUrl . '/404';
 $currentPage     = '404';
 $noindex         = true;
-$cssVersion      = '6';
+$cssVersion      = '7';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

@@ -8,7 +8,7 @@ $canonicalUrl    = $siteUrl . '/services/tree-services/';
 $currentPage     = 'services';
 $ogImage         = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396318170-psrogl-481705784_605960762427911_845944733817866550_n.jpg';
 $heroImagePreload = $ogImage;
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Page Photos ────────────────────────────────────────────── */
 $photos = [

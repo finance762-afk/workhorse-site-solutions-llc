@@ -9,7 +9,7 @@ $pageDescription = 'Workhorse Site Solutions serves Damascus, Gresham, Happy Val
 $canonicalUrl    = $siteUrl . '/service-area/';
 $currentPage     = 'service-area';
 $heroImagePreload = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/1779396299803-tx16dq-481656131_605127309177923_4080066704641508745_n.jpg';
-$cssVersion      = '6';
+$cssVersion      = '7';
 
 /* ── Photos ─────────────────────────────────────────────────── */
 $photoBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/workhorse-site-solutions-llc/photos/';

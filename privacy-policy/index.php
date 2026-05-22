@@ -16,7 +16,7 @@ $pageTitle       = 'Privacy Policy | ' . $siteName;
 $pageDescription = 'Privacy Policy for ' . $siteName . ' — how we collect, use, and protect your information when you visit our website or submit a contact form.';
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $currentPage     = 'legal';
-$cssVersion      = '6';
+$cssVersion      = '7';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 
