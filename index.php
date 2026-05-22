@@ -652,11 +652,11 @@ $schemaMarkup = generateFAQSchema($faqs);
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item reveal-up reveal-delay-1">
-        <div class="stat-number" data-counter data-target="12">0</div>
+        <div class="stat-number" data-counter data-target="12" data-suffix="+">0</div>
         <div class="stat-label">Services Offered</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-2">
-        <div class="stat-number" data-counter data-target="<?php echo $yearsInBusiness; ?>">0</div>
+        <div class="stat-number" data-counter data-target="<?php echo $yearsInBusiness; ?>" data-suffix="+">0</div>
         <div class="stat-label">Years Serving Damascus &amp; Portland Metro</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-3">
@@ -664,8 +664,8 @@ $schemaMarkup = generateFAQSchema($faqs);
         <div class="stat-label">Google Rating</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-4">
-        <div class="stat-number" data-counter data-target="100">0</div>
-        <div class="stat-label">% Licensed, Bonded &amp; Insured</div>
+        <div class="stat-number" data-counter data-target="100" data-suffix="%">0</div>
+        <div class="stat-label">Licensed, Bonded &amp; Insured</div>
       </div>
     </div>
   </div>
@@ -809,34 +809,5 @@ $schemaMarkup = generateFAQSchema($faqs);
   </div>
 </section>
 
-<!-- Stat Counter Animation -->
-<script>
-(function(){
-  var counters = document.querySelectorAll('[data-counter]');
-  if (!counters.length || !('IntersectionObserver' in window)) return;
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var el = entry.target;
-        var target = parseInt(el.getAttribute('data-target'), 10);
-        var duration = 2000;
-        var start = 0;
-        var startTime = null;
-        function animate(ts) {
-          if (!startTime) startTime = ts;
-          var progress = Math.min((ts - startTime) / duration, 1);
-          var eased = 1 - Math.pow(1 - progress, 3);
-          el.textContent = Math.floor(eased * target);
-          if (progress < 1) requestAnimationFrame(animate);
-          else el.textContent = target + '+';
-        }
-        requestAnimationFrame(animate);
-        observer.unobserve(el);
-      }
-    });
-  }, { threshold: 0.3 });
-  counters.forEach(function(c) { observer.observe(c); });
-})();
-</script>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
