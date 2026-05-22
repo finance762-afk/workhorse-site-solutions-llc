@@ -1161,6 +1161,9 @@ section.hero {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+@media (max-width: 768px) {
+  .ticker-track { animation-duration: 60s; }
+}
 
 /* === Back to Top === */
 .back-to-top {

@@ -652,11 +652,11 @@ $schemaMarkup = generateFAQSchema($faqs);
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item reveal-up reveal-delay-1">
-        <div class="stat-number" data-counter data-target="12" data-suffix="+">0</div>
+        <div class="stat-number" data-counter data-target="12" data-suffix="+">12+</div>
         <div class="stat-label">Services Offered</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-2">
-        <div class="stat-number" data-counter data-target="<?php echo $yearsInBusiness; ?>" data-suffix="+">0</div>
+        <div class="stat-number" data-counter data-target="<?php echo $yearsInBusiness; ?>" data-suffix="+"><?php echo $yearsInBusiness; ?>+</div>
         <div class="stat-label">Years Serving Damascus &amp; Portland Metro</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-3">
@@ -664,7 +664,7 @@ $schemaMarkup = generateFAQSchema($faqs);
         <div class="stat-label">Google Rating</div>
       </div>
       <div class="stat-item reveal-up reveal-delay-4">
-        <div class="stat-number" data-counter data-target="100" data-suffix="%">0</div>
+        <div class="stat-number" data-counter data-target="100" data-suffix="%">100%</div>
         <div class="stat-label">Licensed, Bonded &amp; Insured</div>
       </div>
     </div>

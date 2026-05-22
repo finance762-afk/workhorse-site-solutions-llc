@@ -73,12 +73,21 @@ document.addEventListener('DOMContentLoaded', function() {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           var el = entry.target;
-          var target = parseInt(el.getAttribute('data-target'), 10);
+          var rawTarget = el.getAttribute('data-target');
+          var target = Number(rawTarget);
           var suffix = el.getAttribute('data-suffix') || '';
           var prefix = el.getAttribute('data-prefix') || '';
+
+          // Guard against NaN — display the raw value as fallback
+          if (isNaN(target) || rawTarget === null) {
+            el.textContent = prefix + (rawTarget || '0') + suffix;
+            counterObserver.unobserve(el);
+            return;
+          }
+
           var duration = 2000;
-          var start = 0;
           var startTime = null;
+          el.textContent = prefix + '0' + suffix;
 
           function animate(timestamp) {
             if (!startTime) startTime = timestamp;
@@ -93,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
           counterObserver.unobserve(el);
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.15 });
     counters.forEach(function(el) { counterObserver.observe(el); });
   }
 
