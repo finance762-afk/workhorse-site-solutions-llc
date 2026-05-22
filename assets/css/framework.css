@@ -433,12 +433,12 @@ section.hero {
 
 /* Image Logo */
 .site-logo {
-  height: 70px;
+  height: 140px;
   width: auto;
   transition: height var(--transition-base);
 }
 .site-header.scrolled .site-logo {
-  height: 56px;
+  height: 112px;
 }
 .site-logo img { height: 100%; width: auto; }
 
