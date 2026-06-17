@@ -163,5 +163,6 @@ $ogImage         = $ogImage         ?? 'https://db.pageone.cloud/storage/v1/obje
   }
   </script>
   <?php endif; ?>
+<?php require_once __DIR__ . '/edit-mode.php'; ?>
 </head>
 <body>
