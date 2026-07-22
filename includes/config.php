@@ -157,7 +157,7 @@ $yearEstablished = 2022;
 $yearsInBusiness = (int) date('Y') - $yearEstablished;
 
 // ── Form ──────────────────────────────────────────────────
-$formAction = 'https://design.pageone.cloud/api/leads/workhorse-site-solutions-llc';
+$formAction = 'https://db.pageone.cloud/functions/v1/leads/workhorse-site-solutions-llc';
 
 // ── CSS Version (increment on every styles.css change) ────
 $cssVersion = '7';
